@@ -11,10 +11,10 @@ JavaSE 5.0 中提供了Varargs(variable number of arguments)机制，允许直�
 - JDK5.0： 采用可变个数形参来定义方法，传入多个同一类型变量  
 
   ```java
-  public static void test(int a ,String…books);
+  public static void test(int a ,String ... books);
   ```
 
-
+- 编译器认为这两种写法是相同的，只把[]换成...不构成重载
 
 ### 声明格式
 
@@ -24,7 +24,7 @@ JavaSE 5.0 中提供了Varargs(variable number of arguments)机制，允许直�
   - 方法参数部分指定类型的参数个数是可变多个： 0个， 1个或多个  
 
 - 可变个数形参的方法与同名的方法之间，彼此构成重载  
-- 方法的参数部分有可变形参，需要放在形参声明的最后  
+- 方法的参数部分有可变形参，需要放在形参声明的最后  （不然不知道String数组有多长）；以前的方法可以放到前面
 - 在一个方法的形参位置，最多只能声明一个可变个数形参  
 
 

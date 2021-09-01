@@ -21,3 +21,8 @@ public int addition(int upperBound){
 }
 ```
 
+斐波那契数列
+
+f(n) = f(n-1) + f(n-2)
+
+可以考虑成走台阶的方法一共有多少种：一次只能跨一个台阶或者两个台阶，n阶

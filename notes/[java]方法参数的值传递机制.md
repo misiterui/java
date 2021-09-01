@@ -23,6 +23,38 @@ o1.orderId = 1001;
 o2.orderId = o1;
 ```
 
+```java
+public class test {
+    public static void main(String[] args) {
+        Order o1 = new Order();
+        System.out.println("o1.orderId = " + o1.orderId);
+        o1.orderId = 1001;
+
+        Order o2 = o1;
+
+        System.out.println("o1.orderId = " + o1.orderId);
+        System.out.println("o2.orderId = " + o2.orderId);
+
+        o2.orderId = 1002;
+        System.out.println("o1.orderId = " + o1.orderId);
+        System.out.println("o2.orderId = " + o2.orderId);
+    }
+
+}
+
+class Order{
+    int orderId;
+}
+
+/* 输出
+o1.orderId = 0
+o1.orderId = 1001
+o2.orderId = 1001
+o1.orderId = 1002
+o2.orderId = 1002
+*/
+```
+
 
 
 
